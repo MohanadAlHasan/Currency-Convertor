@@ -196,7 +196,7 @@ h1 {
     justify-content: space-around;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 500px) {
   body {
     font-size: 8px;
   }
