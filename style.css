@@ -53,6 +53,63 @@ form input {
   background-color: rgb(243, 241, 241);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fd0;
+}
+.container {
+  background-color: #fff;
+  width: 750px;
+  padding: 50px;
+  border-radius: 15px;
+  margin-top: 30px;
+
+  box-shadow: 0px 10px 25px rgb(35, 34, 33);
+}
+header h1 {
+  color: #000;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+header p {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-bottom: 30px;
+}
+.container form {
+  margin-bottom: 20px;
+}
+
+.amount-result {
+  display: flex;
+  justify-content: space-between;
+}
+form input {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #fd0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: rgb(243, 241, 241);
+}
+
 .exchange-result {
   margin-top: 33px;
 }
@@ -61,6 +118,7 @@ form input {
 }
 form .drop-list {
   margin-top: 20px;
+  margin-left: 33px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,21 +127,24 @@ form .drop-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 110px;
+  height: 40px;
+  width: 120px;
   border: 1px solid #fd0;
   border-radius: 5px;
 }
 .select-container select {
   cursor: pointer;
   width: auto;
-  font-size: 0.5rem;
+  font-size: 1.2rem;
   margin: 0 -5px 0 5px;
   outline: none;
   border: none;
 }
+.to .select-container {
+  margin-right: 56px;
+}
 /* The ::-webkit-scrollbar didn't work I tried a lot but I can't solve this issue */
-/* select::-webkit-scrollbar {
+select::-webkit-scrollbar {
   width: 10px;
 }
 select::-webkit-scrollbar-track {
@@ -91,15 +152,15 @@ select::-webkit-scrollbar-track {
 }
 select::-webkit-scrollbar-thumb {
   border-radius: 10px;
-} */
+}
 
 .select-container img {
-  max-width: 25px;
+  width: 30px;
 }
 .icon {
   color: green;
   padding: 8px;
-  margin: 30px 30px 0 30px;
+  margin: 25px;
   border: 1px solid green;
   border-radius: 50%;
 }
@@ -112,18 +173,45 @@ select::-webkit-scrollbar-thumb {
   transition: 0.7s ease;
 }
 .resultExchange {
-  margin-top: 10px;
+  margin-top: 30px;
   color: #000;
+  font-size: 1.5rem;
 }
 /* for the error message */
 h1 {
   color: red;
 }
-@media (max-width: 400px) {
-  .container {
-    width: 350px;
+@media (max-width: 800px) {
+  body {
+    font-size: 8px;
   }
-  .icon {
-    margin: 15px 15px 0 15px;
+  .container {
+    width: 500px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  .amount-result {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 412px) {
+  body {
+    font-size: 8px;
+  }
+  .container {
+    width: 300px;
+    padding: 10px;
+  }
+  .amount-result {
+    display: flex;
+    justify-content: space-around;
+  }
+  form input {
+    width: 100px;
+  }
+  .drop-list .select-container {
+    width: 80px;
   }
 }
