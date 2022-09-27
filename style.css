@@ -1,1 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fd0;
+}
+.container {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  max-height: 90vh;
+  box-shadow: 0px 10px 25px rgb(35, 34, 33);
+}
+header h1 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+header p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.container form {
+  margin-bottom: 20px;
+}
 
+.amount-result {
+  display: flex;
+  justify-content: space-between;
+}
+form input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 120px;
+  padding: 10px;
+  border: 1px solid #fd0;
+  border-radius: 5px;
+  font-size: 8px;
+  background-color: rgb(243, 241, 241);
+}
+
+.exchange-result {
+  margin-top: 33px;
+}
+.amount {
+  margin-top: 33px;
+}
+form .drop-list {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 110px;
+  border: 1px solid #fd0;
+  border-radius: 5px;
+}
+.select-container select {
+  cursor: pointer;
+  width: auto;
+  font-size: 0.5rem;
+  margin: 0 -5px 0 5px;
+  outline: none;
+  border: none;
+}
+/* The ::-webkit-scrollbar didn't work I tried a lot but I can't solve this issue */
+/* select::-webkit-scrollbar {
+  width: 10px;
+}
+select::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+select::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+} */
+
+.select-container img {
+  max-width: 25px;
+}
+.icon {
+  color: green;
+  padding: 8px;
+  margin: 30px 30px 0 30px;
+  border: 1px solid green;
+  border-radius: 50%;
+}
+/*  this icon to swap between the  tow countries   */
+.arrow:hover {
+  background-color: rgb(243, 241, 241);
+  transform: scale(1.1);
+}
+.arrow {
+  transition: 0.7s ease;
+}
+.resultExchange {
+  margin-top: 10px;
+  color: #000;
+}
+/* for the error message */
+h1 {
+  color: red;
+}
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+  }
+  .icon {
+    margin: 15px 15px 0 15px;
+  }
+}
