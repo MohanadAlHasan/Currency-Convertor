@@ -22,4 +22,61 @@
       referrerpolicy="no-referrer"
     />
   </head>
+  <body>
+    <!-- container is the box which contains all of the elements  -->
+    <div class="container">
+      <header><h1>Currency Convertor</h1>
+        <p>Convert popular currencies at effective exchange rates with our currency converter calculator.</p>
+      </header>
+      <form action="#">
+        <div class="drop-list">
+          <!--from is the section the user uses to enter the amount to exchange  -->
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img
+                class="flag"
+                src="https://flagcdn.com/16x12/us.png"
+                alt="flag"
+              />
+              <!-- the first select to chose the country -->
+              <select></select>
+            </div>
+          </div>
+          <div class="icon arrow">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          </div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-container">
+              <img
+                class="flag"
+                src="https://flagcdn.com/16x12/us.png"
+                alt="flag"
+              />
+              <!-- the second select to chose another country-->
+              <select></select>
+            </div>
+          </div>
+        </div>
+<!-- this section to enter the amount to exchange it the user can enter the amount in  tow countries -->
+        <div class="amount-result">
+          <div class="amount">
+            
+            <input type="text" placeholder="Enter Amount to Convert" />
+          </div>
+          <div class="icon">
+            <i class="fa-sharp fa-solid fa-equals"></i>
+          </div>
+          <div class="exchange-result">
+            <input type="text" />
+          </div>
+        </div>
+        <!-- this section to show the result of exchange -->
+        <div class="resultExchange"><div>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
