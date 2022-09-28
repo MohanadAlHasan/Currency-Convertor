@@ -1,5 +1,6 @@
 # Currency-Convertor
 
+![Screenshot](https://user-images.githubusercontent.com/104508648/192707688-24fdaefd-a4c9-4576-850c-c4f43b8b9aca.png)
 
 
 
